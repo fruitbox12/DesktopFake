@@ -32,7 +32,7 @@ body{
     height: 90vh;
 
     background-color: rgb(33, 36, 43);
-    background-image: url(/img/wpp.jpg);
+    background-image: url(/img/wpp.png);
     display: flex;
     flex-direction: column; 
 

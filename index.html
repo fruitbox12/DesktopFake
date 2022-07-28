@@ -8,14 +8,21 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <script src="js/app.js" defer></script>
 </head>
+<style>
+    h1 {
+       padding : 30px;
+    }
+    </style>
 <body onload="data()">
+   
     <div class="container">
         <div class="app-screen">
+            
             <div class="header">
                 <ul class="ul-1">
-                    <li><a href="#">ico</a></li>
-                    <li><a href="#">ico</a></li>
-                    <li><a href="#">ico</a></li>
+                    <li><a href="#">file</a></li>
+                    <li><a href="#">settings</a></li>
+                    <li><a href="#">help</a></li>
                 </ul>
                 <ul class="ul-2">
                     <li><a href="#">ico</a></li>
@@ -23,6 +30,7 @@
                     <li id="data"></li>
                 </ul>
             </div>
+           
             <div class="footer">
                 <div class="dock">
                     <ul>
@@ -35,16 +43,25 @@
                     </ul>
                 </div>
             </div>
+            <div draggable="true"><a href="https://github.com/cypherpunk99/dapp-browser" onclick="toggleConsole()" ><h1>
+                <div></div><a href="https://market.dappify.com/tokenizer"><img src="https://th.bing.com/th/id/R.fd5721a4b4375ecc61536aad6adff0c6?rik=zorn5LFNZ53ENw&riu=http%3a%2f%2fthewebivore.com%2fwp-content%2fuploads%2f2014%2f11%2fdelorean-300x150.png&ehk=EB%2fxF4RNfkqh5T3iKvZ2LZkb9ZRuaIYS%2b7njxA3xxcA%3d&risl=&pid=ImgRaw&r=0" width="80"
+                    height="50" ></a>
+                </h1>
+        </div>
+            
             <div class="screen-action" id="screen-action">
                 <div class="dropzones">
                     <div class="dropzone"></div>
                     <div class="dropzone"></div>
                     <div class="dropzone"></div>
                     <div class="dropzone"></div>
+                    
                 </div>
                 <!-- console -->
+                
                 <div class="console shadow-apps" draggable="true">
                     <div class="header header-app">
+                        
                         <ul>
                             <li><a id="min" href="#" onclick="toggleConsole()" class="cl"></a></li>
                             <li><a id="max" href="#" onclick="maxConsole()" class="cl"></a></li>
@@ -53,7 +70,7 @@
                     </div>
                     <div class="linhas">
                         <div class="linha1">
-                            <p>C:\iunix\luci\Desktop>_ <span>
+                            <p>EXTINCT:\back\to\the\metaverse>_ <span>
                                 <input id="commands" type="text" value="" onkeypress="'enter',comandos()">
                             </span></p>
                         </div>
@@ -63,7 +80,9 @@
                     </div>
                     
                 </div>
+                
                 <!-- browser -->
+                
                 <div class="browser shadow-apps" draggable="true">
                     <div class="header header-app">
                         <ul>
@@ -80,6 +99,7 @@
                         <img src="img/google.jpg" alt="">
                     </div>
                 </div>
+                
                 <!-- file -->
                 <div class="file shadow-apps" draggable="true">
                     <div class="header header-app">
@@ -115,6 +135,7 @@
                                         </ul>
                                     </div>
                                 </div>
+                                
                                 <div class="right">
                                     <div class="header">
                                         <p>content header</p>
